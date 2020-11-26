@@ -22,4 +22,4 @@ sortedResults = collections.OrderedDict(sorted( result.items() ))
 for key, value in sortedResults.items():
     print("{}, {}".format(key, value))
     
-print("Total time took: ", time.perf_counter() - start)
+print("Total time took: ", time.perf_counter() - start ," secs")
