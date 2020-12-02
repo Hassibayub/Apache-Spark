@@ -1,6 +1,6 @@
 from pyspark import SparkConf, SparkContext 
 
-conf = SparkConf().setMaster("local").setAppName("most popular superheo")
+conf = SparkConf().setMaster("local[*]").setAppName("most popular superheo")
 sc = SparkContext(conf= conf)
 
 def parseNames(val):
